@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jbvincey.nestedradiobutton.NestedConstraintRadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:checkedButton="@+id/radioButton2">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="@dimen/cardview_margin">
+
+        <com.jbvincey.nestedradiobutton.NestedRadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/l2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/l1"
+        app:layout_constraintLeft_toRightOf="@id/l1"
+        android:layout_margin="@dimen/cardview_margin">
+
+        <com.jbvincey.nestedradiobutton.NestedRadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/l3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/l2"
+        app:layout_constraintLeft_toRightOf="@+id/l2"
+        android:layout_margin="@dimen/cardview_margin">
+
+        <com.jbvincey.nestedradiobutton.NestedRadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/l4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/l3"
+        app:layout_constraintLeft_toRightOf="@+id/l3"
+        android:layout_margin="@dimen/cardview_margin">
+
+        <com.jbvincey.nestedradiobutton.NestedRadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.CardView>
+
+</com.jbvincey.nestedradiobutton.NestedConstraintRadioGroup>

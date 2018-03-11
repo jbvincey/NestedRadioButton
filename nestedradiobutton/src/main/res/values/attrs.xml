@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NestedRadioGroup">
+        <attr name="checkedButton" format="reference"/>
+        <attr name="orientation" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="NestedRadioButton">
+        <attr name="clickableParent" format="reference"/>
+    </declare-styleable>
+</resources>

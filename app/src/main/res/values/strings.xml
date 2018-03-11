@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NestedRadioButtonSample</string>
+
+    <string name="nested_sample_linear_title">Linear\nRadioGroup</string>
+    <string name="nested_sample_relative_title">Relative\nRadioGroup</string>
+    <string name="nested_sample_constraint_title">Constraint\nRadioGroup</string>
+    <string name="nested_sample_frame_title">Frame\nRadioGroup</string>
+
+</resources>
