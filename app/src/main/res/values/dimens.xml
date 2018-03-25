@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="cardview_margin">8dp</dimen>
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="card_margin_half">4dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="content_margin">12dp</dimen>
+    <dimen name="radiobutton_margin">4dp</dimen>
+    <dimen name="picture_size">72dp</dimen>
 </resources>

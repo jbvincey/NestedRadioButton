@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nested_sample_viewpager"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.jbvincey.nestedradiobuttonsample.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="com.jbvincey.nestedradiobuttonsample.MainActivity">
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/nested_sample_viewpager"
+    <android.support.design.widget.TabLayout
+        android:id="@+id/nested_sample_tablayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@color/colorPrimary"
+        app:tabIndicatorColor="@android:color/white"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@style/TabLayoutText"
+        app:tabTextColor="@color/white90" />
 
-        <android.support.design.widget.TabLayout
-            android:id="@+id/nested_sample_tablayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top"
-            app:tabMode="fixed" />
-
-    </android.support.v4.view.ViewPager>
-
-</LinearLayout>
+</android.support.v4.view.ViewPager>

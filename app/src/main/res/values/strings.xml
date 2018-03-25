@@ -5,5 +5,7 @@
     <string name="nested_sample_relative_title">Relative\nRadioGroup</string>
     <string name="nested_sample_constraint_title">Constraint\nRadioGroup</string>
     <string name="nested_sample_frame_title">Frame\nRadioGroup</string>
+    
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
 
 </resources>

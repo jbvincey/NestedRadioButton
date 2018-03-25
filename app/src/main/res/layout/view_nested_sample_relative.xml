@@ -1,65 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.jbvincey.nestedradiobutton.NestedRelativeRadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     app:checkedButton="@+id/radioButton3">
 
-    <android.support.v7.widget.CardView
+    <LinearLayout
         android:id="@+id/l1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_margin="@dimen/cardview_margin">
+        android:layout_marginLeft="@dimen/card_margin"
+        android:layout_marginRight="@dimen/card_margin"
+        android:layout_marginTop="@dimen/card_margin"
+        android:background="@color/white"
+        android:elevation="@dimen/card_elevation"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        tools:targetApi="LOLLIPOP">
 
         <com.jbvincey.nestedradiobutton.NestedRadioButton
             android:id="@+id/radioButton1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/content_margin"
+            android:layout_marginStart="@dimen/content_margin"
+            android:layout_marginTop="@dimen/content_margin"
+            app:clickableParent="@id/l1" />
 
-    </android.support.v7.widget.CardView>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/picture_size"
+            android:layout_height="@dimen/picture_size"
+            android:layout_marginBottom="@dimen/content_margin"
+            android:layout_marginStart="@dimen/content_margin"
+            android:layout_marginTop="@dimen/content_margin"
+            android:src="@drawable/cyprus" />
 
-    <android.support.v7.widget.CardView
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/content_margin"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="@string/lorem_ipsum" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/l2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="@dimen/cardview_margin">
+        android:layout_below="@+id/l1"
+        android:layout_marginLeft="@dimen/card_margin"
+        android:layout_marginRight="@dimen/card_margin"
+        android:layout_marginTop="@dimen/card_margin"
+        android:background="@color/white"
+        android:elevation="@dimen/card_elevation"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        tools:targetApi="LOLLIPOP">
 
         <com.jbvincey.nestedradiobutton.NestedRadioButton
             android:id="@+id/radioButton2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/content_margin"
+            android:layout_marginStart="@dimen/content_margin"
+            android:layout_marginTop="@dimen/content_margin"
+            app:clickableParent="@id/l2" />
 
-    </android.support.v7.widget.CardView>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/picture_size"
+            android:layout_height="@dimen/picture_size"
+            android:layout_marginBottom="@dimen/content_margin"
+            android:layout_marginStart="@dimen/content_margin"
+            android:layout_marginTop="@dimen/content_margin"
+            android:src="@drawable/panorama" />
 
-    <android.support.v7.widget.CardView
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/content_margin"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="@string/lorem_ipsum" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/l3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_margin="@dimen/cardview_margin">
+        android:layout_below="@+id/l2"
+        android:layout_marginLeft="@dimen/card_margin"
+        android:layout_marginRight="@dimen/card_margin"
+        android:layout_marginTop="@dimen/card_margin"
+        android:background="@color/white"
+        android:elevation="@dimen/card_elevation"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        tools:targetApi="LOLLIPOP">
 
         <com.jbvincey.nestedradiobutton.NestedRadioButton
             android:id="@+id/radioButton3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/content_margin"
+            android:layout_marginStart="@dimen/content_margin"
+            android:layout_marginTop="@dimen/content_margin"
+            app:clickableParent="@id/l3" />
 
-    </android.support.v7.widget.CardView>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/picture_size"
+            android:layout_height="@dimen/picture_size"
+            android:layout_marginBottom="@dimen/content_margin"
+            android:layout_marginStart="@dimen/content_margin"
+            android:layout_marginTop="@dimen/content_margin"
+            android:src="@drawable/usa" />
 
-    <android.support.v7.widget.CardView
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/content_margin"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="@string/lorem_ipsum" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/l4"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="@dimen/cardview_margin">
+        android:layout_below="@+id/l3"
+        android:layout_marginLeft="@dimen/card_margin"
+        android:layout_marginRight="@dimen/card_margin"
+        android:layout_marginTop="@dimen/card_margin"
+        android:background="@color/white"
+        android:elevation="@dimen/card_elevation"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        tools:targetApi="LOLLIPOP">
 
         <com.jbvincey.nestedradiobutton.NestedRadioButton
             android:id="@+id/radioButton4"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/content_margin"
+            android:layout_marginStart="@dimen/content_margin"
+            android:layout_marginTop="@dimen/content_margin"
+            app:clickableParent="@id/l4" />
 
-    </android.support.v7.widget.CardView>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/picture_size"
+            android:layout_height="@dimen/picture_size"
+            android:layout_marginBottom="@dimen/content_margin"
+            android:layout_marginStart="@dimen/content_margin"
+            android:layout_marginTop="@dimen/content_margin"
+            android:src="@drawable/hans" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/content_margin"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="@string/lorem_ipsum" />
+
+    </LinearLayout>
 
 </com.jbvincey.nestedradiobutton.NestedRelativeRadioGroup>
