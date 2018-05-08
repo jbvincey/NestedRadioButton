@@ -50,5 +50,5 @@ ext {
     versionCode = 1
     versionName = "1.0"
 
-    supportAppCompatVersion = "27.0.2"
+    supportAppCompatVersion = "27.1.1"
 }
