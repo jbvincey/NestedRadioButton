@@ -19,6 +19,7 @@ package com.jbvincey.nestedradiobutton;
 import android.annotation.TargetApi;
 import android.os.Build;
 import android.support.annotation.IdRes;
+import android.support.annotation.VisibleForTesting;
 import android.util.Log;
 import android.util.SparseArray;
 import android.view.View;
@@ -34,9 +35,11 @@ public class NestedRadioGroupManager {
     private static final String TAG = "NestedRadioGroupManager";
 
     // holds the checked id; the selection is empty by default
-    private int checkedId = -1;
+    @VisibleForTesting
+    protected int checkedId = -1;
     // tracks children radio buttons checked state
-    private CompoundButton.OnCheckedChangeListener childOnCheckedChangeListener;
+    @VisibleForTesting
+    protected CompoundButton.OnCheckedChangeListener childOnCheckedChangeListener;
     // when true, onCheckedChangeListener discards events
     private boolean protectFromCheckedChange = false;
     private OnCheckedChangeListener onCheckedChangeListener;
@@ -44,7 +47,8 @@ public class NestedRadioGroupManager {
 
     // Indicates whether the child was set from resources or dynamically, so it can be used
     // to sanitize autofill requests.
-    private int initialCheckedId = View.NO_ID;
+    @VisibleForTesting
+    protected int initialCheckedId = View.NO_ID;
 
     private final SparseArray<NestedRadioButton> radioButtons;
 
@@ -80,7 +84,6 @@ public class NestedRadioGroupManager {
      * such an operation is equivalent to invoking {@link #clearCheck()}.</p>
      *
      * @param id the unique id of the radio button to select in this group
-     * @see #getCheckedRadioButtonId()
      * @see #clearCheck()
      */
     public void check(@IdRes int id) {
@@ -100,7 +103,8 @@ public class NestedRadioGroupManager {
         setCheckedId(id);
     }
 
-    private void setCheckedId(@IdRes int id) {
+    @VisibleForTesting
+    protected void setCheckedId(@IdRes int id) {
         checkedId = id;
         if (onCheckedChangeListener != null) {
             onCheckedChangeListener.onCheckedChanged(this, checkedId);
@@ -114,7 +118,8 @@ public class NestedRadioGroupManager {
         }*/
     }
 
-    private void setCheckedStateForView(int viewId, boolean checked) {
+    @VisibleForTesting
+    protected void setCheckedStateForView(int viewId, boolean checked) {
         NestedRadioButton checkedView = findViewById(viewId);
         if (checkedView != null) {
             checkedView.setChecked(checked);
@@ -130,28 +135,6 @@ public class NestedRadioGroupManager {
         structure.setDataIsSensitive(checkedId != initialCheckedId);
     }
 
-    /**
-     * <p>Returns the identifier of the selected radio button in this group.
-     * Upon empty selection, the returned value is -1.</p>
-     *
-     * @return the unique id of the selected radio button in this group
-     * @attr ref android.R.styleable#RadioGroup_checkedButton
-     * @see #check(int)
-     * @see #clearCheck()
-     */
-    @IdRes
-    public int getCheckedRadioButtonId() {
-        return checkedId;
-    }
-
-    /**
-     * <p>Clears the selection. When the selection is cleared, no radio button
-     * in this group is selected and {@link #getCheckedRadioButtonId()} returns
-     * null.</p>
-     *
-     * @see #check(int)
-     * @see #getCheckedRadioButtonId()
-     */
     public void clearCheck() {
         check(-1);
     }
