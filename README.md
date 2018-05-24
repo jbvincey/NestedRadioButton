@@ -1,3 +1,4 @@
+[![JCenter release](https://img.shields.io/badge/jcenter-1.0-blue.svg?style=flat)](https://bintray.com/apps-backelite/libraries/BkVASPhoneViewAndroid)
 [![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
 
 NestedRadioButton
@@ -9,7 +10,14 @@ NestedRadioButton lets you have any number of ViewGroup intermediates between yo
 
 ## Install
 
-in progress
+NestedRadioButton is available on jcenter. To use in your project, simply add the following dependency to your app:
+```gradle
+dependencies {
+    ...
+    implementation 'com.jbvincey:nestedradiobutton:1.0'
+    ...
+}
+```
 
 ## Usage
 
