@@ -20,7 +20,6 @@ import android.annotation.TargetApi;
 import android.os.Build;
 import android.support.annotation.IdRes;
 import android.support.annotation.VisibleForTesting;
-import android.util.Log;
 import android.util.SparseArray;
 import android.view.View;
 import android.view.ViewStructure;
@@ -28,6 +27,9 @@ import android.widget.CompoundButton;
 
 /**
  * Created by jean-baptistevincey on 11/01/2018.
+ *
+ * Handle nested radio group logic (see {@link NestedConstraintRadioGroup}, {@link NestedFrameRadioGroup},
+ * {@link NestedLinearRadioGroup}, {@link NestedRelativeRadioGroup}.
  */
 
 public class NestedRadioGroupManager {

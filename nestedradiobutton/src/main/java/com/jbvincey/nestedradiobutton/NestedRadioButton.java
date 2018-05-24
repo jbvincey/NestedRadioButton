@@ -26,6 +26,25 @@ import android.view.View;
 
 /**
  * Created by jean-baptistevincey on 09/01/2018.
+ *
+ * <p>
+ * A radio button is a two-states button that can be either checked or
+ * unchecked. When the radio button is unchecked, the user can press or click it
+ * to check it. However, contrary to a {@link android.widget.CheckBox}, a radio
+ * button cannot be unchecked by the user once checked.
+ * </p>
+ *
+ * <p>
+ * Radio buttons are normally used together in a
+ * {@link android.widget.RadioGroup}. When several radio buttons live inside
+ * a radio group, checking one radio button unchecks all the others.</p>
+ * </p>
+ *
+ * <p>See the <a href="{@docRoot}guide/topics/ui/controls/radiobutton.html">Radio Buttons</a>
+ * guide.</p>
+ *
+ * The difference with RadioButton is that NestedRadioButton allows to have any number of ViewGroup
+ * intermediates between your NestedRadioButton and NestedRadioGroup.
  */
 
 public class NestedRadioButton extends AppCompatRadioButton {

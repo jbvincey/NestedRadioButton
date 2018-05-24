@@ -28,17 +28,11 @@ import android.view.ViewGroup;
 import android.view.ViewStructure;
 import android.view.autofill.AutofillValue;
 import android.widget.FrameLayout;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.RelativeLayout;
 
 /**
  * Created by jean-baptistevincey on 11/01/2018.
- */
-
-//TODO change comments
-
-/**
+ *
  * <p>This class is used to create a multiple-exclusion scope for a set of radio
  * buttons. Checking one radio button that belongs to a radio group unchecks
  * any previously checked radio button within the same group.</p>
@@ -50,16 +44,11 @@ import android.widget.RelativeLayout;
  * <p>The selection is identified by the unique id of the radio button as defined
  * in the XML layout file.</p>
  * <p>
- * <p><strong>XML Attributes</strong></p>
- * <p>See {@link com.android.internal.R.styleable#RadioGroup RadioGroup Attributes},
- * {@link com.android.internal.R.styleable#LinearLayout LinearLayout Attributes},
- * {@link com.android.internal.R.styleable#ViewGroup ViewGroup Attributes},
- * {@link com.android.internal.R.styleable#View View Attributes}</p>
- * <p>Also see
- * {@link android.widget.LinearLayout.LayoutParams LinearLayout.LayoutParams}
- * for layout attributes.</p>
  *
- * @see RadioButton
+ * The difference with RadioGroup is that NestedRadioGroup allows to have any number of ViewGroup
+ * intermediates between your NestedRadioButton and NestedRadioGroup.
+ *
+ * @see NestedRadioButton
  */
 
 public class NestedFrameRadioGroup extends FrameLayout implements NestedRadioGroupInterface {
