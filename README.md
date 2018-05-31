@@ -1,4 +1,4 @@
-[![JCenter release](https://img.shields.io/badge/jcenter-1.0-blue.svg?style=flat)](https://bintray.com/apps-backelite/libraries/BkVASPhoneViewAndroid)
+[![JCenter release](https://img.shields.io/badge/jcenter-1.0-blue.svg?style=flat)](https://bintray.com/jbvincey/maven/NestedRadioButton)
 [![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
 
 NestedRadioButton
