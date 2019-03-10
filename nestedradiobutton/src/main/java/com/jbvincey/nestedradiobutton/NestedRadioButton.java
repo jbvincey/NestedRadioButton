@@ -69,8 +69,8 @@ public class NestedRadioButton extends AppCompatRadioButton {
         // retrieve selected radio button as requested by the user in the
         // XML layout file
         TypedArray attributes = context.obtainStyledAttributes(attrs, R.styleable.NestedRadioButton);
-
         clickableParentIdRes = attributes.getResourceId(R.styleable.NestedRadioButton_clickableParent, View.NO_ID);
+        attributes.recycle();
     }
 
     @Override
