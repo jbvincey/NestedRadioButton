@@ -1,4 +1,4 @@
-[![JCenter release](https://img.shields.io/badge/jcenter-1.1-blue.svg?style=flat)](https://bintray.com/jbvincey/maven/NestedRadioButton)
+[![Maven Central release](https://img.shields.io/badge/MavenCentral-1.1-blue.svg?style=flat)](https://s01.oss.sonatype.org/service/local/repositories/releases/content/com/github/jbvincey/nestedradiobutton/1.1/)
 [![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
 
 NestedRadioButton
@@ -10,14 +10,18 @@ NestedRadioButton lets you have any number of ViewGroup intermediates between yo
 
 ## Install
 
-NestedRadioButton is available on jcenter. To use in your project, simply add the following dependency to your app:
+NestedRadioButton is available on **Maven Central**. To use in your project, simply add the following dependency to your app:
 ```gradle
 dependencies {
     ...
-    implementation 'com.jbvincey:nestedradiobutton:1.1'
+    implementation 'com.github.jbvincey:nestedradiobutton:1.1'
     ...
 }
 ```
+
+#### Warning
+
+NestedRadioButton used to be available on **JCenter** under the package name `com.jbvincey:nestedradiobutton`. Due to **JCenter** shutdown, the NestedRadioButton library has been migrated to **Maven Central** with a different package name `com.github.jbvincey:nestedradiobutton`. If you were pulling the NestedRadioButton library from **JCenter**, make sure to add **Maven Central** repository in your configuration and to update the package name of NestedRadioButton library.
 
 ## Usage
 
